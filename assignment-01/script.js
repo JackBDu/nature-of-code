@@ -6,11 +6,6 @@ function setup() {
 
 function draw() {
   background(240);
-  fill(220);
-  textAlign(CENTER);
-  textSize(displayWidth/50);
-  textStyle(BOLD);
-  text("Please open this page on a device with gyroscope enabled.", displayWidth/2, displayHeight/2);
   ball.update(check_collision(ball));
   ball.display();
 }
